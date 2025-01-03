@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="Homepage.html">Home Page</a></li>
+                <li><a href="studyarea.html">Study Area</a></li>
+                <li><a href="friends.html">Friends</a></li>
+                <li><a href="explore.html">Explore</a></li>
+                <li><a href="Schedule.html">Book your lesson!</a></li>
+            </ul>    
+        </nav>
+    </header>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="loginPage.css">
+</head>
+<body>
+    <div class="login-container">
+        <h2>Login to Kyururu</h2>
+        <form id="login-form">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            <button type="submit">Login</button>
+            <br>
+            <br>
+            <br>
+            <a href="resetPassword">Forgot your password?</a>
+        </form>
+        <p id="error-message" class="error-message"></p>
+    </div>
+    <script src="loginPage.js"></script>
+</body>
+</html>

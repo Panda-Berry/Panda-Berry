@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Game.css">
+    <title>Japanese Flashcards</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="Homepage.html">Home Page</a></li>
+                <li><a href="Schedule.html">Book your lesson!</a></li>
+                <li><a href="#study-area">Study Area</a></li>
+                <li><a href="#friends">Friends</a></li>
+                <li><a href="#explore">Explore</a></li>
+                <li><a href="loginPage.html">Login</a></li>
+            </ul>    
+        </nav>
+    </header>
+    <main>
+        <div class="flashcard container" id="fadeInBox1">
+            <!-- Inside each flashcard -->
+            <div class="question">
+                <h2>Question 1</h2>
+                <p>What is the Japanese word for "hello"?</p>
+                <input type="text" class="user-answer" placeholder="Your Answer">
+                <button class="check-answer">Check Answer</button>
+                <p class="result"></p>
+                <div class="answer-box">
+                    <p class="correct-answer" style="display: none;">こんにちは</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="flashcard container" id="fadeInBox2">
+            <!-- Inside each flashcard -->
+            <div class="question">
+                <h2>Question 2</h2>
+                <p>How do you say "thank you" in Japanese?</p>
+                <input type="text" class="user-answer" placeholder="Your Answer">
+                <button class="check-answer">Check Answer</button>
+                <p class="result"></p>
+                <div class="answer-box">
+                    <p class="correct-answer" style="display: none;">ありがとう</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="flashcard container" id="fadeInBox3">
+            <div class="question">
+                <h2>Question 3</h2>
+                <p>なおさんは　日本ジンです。</p><br>
+                <div class="radio">
+                    <input type="radio" id="q3_1" name="q3" value="1">
+                    <label for="q3_1">人</label>
+                    <input type="radio" id="q3_2" name="q3" value="2">
+                    <label for="q3_2">大</label>
+                    <input type="radio" id="q3_3" name="q3" value="3">
+                    <label for="q3_3">火</label>
+                    <input type="radio" id="q3_4" name="q3" value="4">
+                    <label for="q3_4">犬</label>
+                </div><br><br>
+                <button class="check-answer">Check Answer</button>
+                <p class="result"></p>
+                <div class="answer-box">
+                    <p class="correct-answer" style="display: none;">Correct Answer 人</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="flashcard container" id="fadeInBox4">
+            <div class="question">
+                <h2>Question 4</h2>
+                <div class="fillBlank">
+                    <span>わたし</span><input type="text" class="user-answer" placeholder=""><span>あさ5<ruby>時<rt>Ji</rt></ruby></span><input type="text" class="user-answer" placeholder=""><span>おきました</span>
+                </div><br>
+                <button class="check-answer">Check Answer</button>
+                <p class="result"></p>
+                <div class="answer-box">
+                    <p class="correct-answer" style="display: none;"></p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="Game.js"></script>
+</body>
+</html>

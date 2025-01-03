@@ -1,0 +1,17 @@
+
+
+body {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    font-family: Arial, sans-serif;
+    background-color: white;
+    margin: 0; /* Remove default margin */
+    background-image: url('/Images/IMG_0078.JPG'); /* Set the image URL */
+    background-size: cover; /* Cover the entire background */
+    background-position: center; /* Center the background image */
+    background-attachment: fixed; /* Keep the background image fixed */
+}
+h1{
+    color: goldenrod;
+}
+

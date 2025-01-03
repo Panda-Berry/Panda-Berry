@@ -1,0 +1,150 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Style the body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: auto;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+/* Style flashcards */
+.main {
+    padding-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding-top: 50px;
+    margin: auto;
+    
+}
+
+.flashcard {
+    width: 300px;
+    height: 200px;
+    background-color: white;
+    color: black;
+     /* display:none Initially hide all flashcards */
+    text-align: center;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.flashcard:hover {
+    transition: transform 0.3s ease-in-out;
+    background-color: #ccc
+}
+
+.question, .answer {
+    padding: 20px;
+    text-align: center;
+}
+
+.question h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.answer p {
+    font-size: 18px;
+    color: #555;
+}
+
+/* Style input box and check button */
+.user-answer {
+    width: 100%;
+    padding: 8px;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.check-answer {
+    display: block;
+    margin-top: 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.check-answer:hover {
+    background-color: #555;
+}
+
+/* Style the result message */
+.result {
+    margin-top: 10px;
+    text-align: center;
+    font-weight: bold;
+}
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #333;
+    z-index: 1;
+}
+
+nav ul {
+    list-style-type: none;
+    text-align: center;
+    padding: 10px;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+nav a:hover {
+    background-color: #555;
+}
+
+.login-button {
+    position:absolute;
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 18px;
+    background-color: #333;
+}
+
+/* Style sections and other content */
+.container {
+    max-width: 960px;
+    margin: 10px auto;
+    padding: 0 20px;
+}
+.flashcard.incorrect {
+    height: 260px;
+}
+
+
+.login-button:hover {
+    background-color: #555;
+}
+
+.correct-answer{
+    display: none;
+}

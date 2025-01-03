@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Game.css">
+    <title>Japanese Flashcards</title>
+</head>
+<body>
+    <header>
+
+        <nav>
+            <ul>
+                <li><a href="Homepage.html">Home Page</a></li>
+                <li><a href="Schedule.html">Book your lesson!</a></li>
+                <li><a href="#study-area">Study Area</a></li>
+                <li><a href="#friends">Friends</a></li>
+                <li><a href="#explore">Explore</a></li>
+                <li><a href="loginPage.html">Login</a></li>
+            </ul>    
+        </nav>
+    </header>
+    <main>
+        <div class="flashcard container" id="fadeInBox1">
+            <!-- Inside each flashcard -->
+            <div class="question">
+                <h2>Question 1</h2>
+                <p>What is the Japanese word for "hello"?</p>
+                <input type="text" class="user-answer" placeholder="Your Answer">
+                <button class="check-answer">Check Answer</button>
+                <p class="result"></p>
+                <div class="answer-box">
+                    <p class="correct-answer" style="display: none;">こんにちは</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="flashcard container" id="fadeInBox2">
+            <!-- Inside each flashcard -->
+
+            <div class="question">
+                <h2>Question 2</h2>
+                <p>How do you say "thank you" in Japanese?</p>
+                <input type="text" class="user-answer" placeholder="Your Answer">
+                <button class="check-answer">Check Answer</button>
+                <p class="result"></p>
+                <div class="answer-box">
+                    <p class="correct-answer" style="display: none;">ありがとう</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Add more flashcards here -->
+    </main>
+    <script src="Game.js"></script>
+</body>
+</html>
